@@ -1,40 +1,287 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neeraja Gandla</title>
+
+```
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: #0f172a;
+        color: #f8fafc;
+        line-height: 1.7;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 20px;
+        background:
+            radial-gradient(circle at top right, #2563eb 0%, transparent 35%),
+            radial-gradient(circle at bottom left, #7c3aed 0%, transparent 35%),
+            #0f172a;
+    }
+
+    .hero-content img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid rgba(255,255,255,0.15);
+        margin-bottom: 24px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .headline {
+        font-size: 1.25rem;
+        color: #cbd5e1;
+        margin-bottom: 24px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        color: white;
+        background: rgba(255,255,255,0.08);
+        padding: 12px 20px;
+        border-radius: 999px;
+        transition: 0.3s;
+    }
+
+    .social-links a:hover {
+        background: rgba(255,255,255,0.18);
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+
+    .about {
+        background: #111827;
+    }
+
+    .about p {
+        max-width: 850px;
+        color: #d1d5db;
+        font-size: 1.05rem;
+    }
+
+    .articles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        margin-top: 30px;
+    }
+
+    .article-card {
+        background: #1e293b;
+        border-radius: 18px;
+        overflow: hidden;
+        transition: transform 0.25s ease;
+    }
+
+    .article-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .article-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .article-content {
+        padding: 20px;
+    }
+
+    .article-content h3 {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .article-content p {
+        color: #cbd5e1;
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+
+    .article-content a {
+        text-decoration: none;
+        color: #60a5fa;
+        font-weight: 600;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: #94a3b8;
+        border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        .headline {
+            font-size: 1rem;
+        }
+    }
+</style>
+```
+
 </head>
 
 <body>
 
+<section class="hero">
+    <div class="hero-content">
+
+```
+    <img src="profile.jpg" alt="Neeraja Gandla">
+
     <h1>Neeraja Gandla</h1>
 
-    <p>
-        Software Engineer | Technical Writer
-    </p>
+    <div class="headline">
+        Android Engineer • Problem Solver • Technical Writer
+    </div>
 
+    <div class="social-links">
+        <a href="https://github.com/NeerajaGandla">GitHub</a>
+        <a href="https://www.linkedin.com/in/neeraja-gandla-android-developer/">LinkedIn</a>
+        <a href="https://medium.com/@gaandlaneeraja">Medium</a>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section class="about">
+    <div class="container">
+
+```
     <h2>About Me</h2>
 
     <p>
-        I write about Android Development,
-        Data Structures & Algorithms,
-        problem solving and software engineering.
+        I'm an Android engineer with a passion for building reliable applications,
+        solving challenging problems, and sharing knowledge through technical writing.
+
+        Over the years, I've worked on Android development across multiple domains
+        while continuously sharpening my problem-solving skills through Data Structures
+        and Algorithms.
+
+        I enjoy learning in public and documenting my journey through articles that
+        simplify complex technical concepts into practical, understandable insights.
     </p>
 
+</div>
+```
+
+</section>
+
+<section>
+    <div class="container">
+
+```
     <h2>Featured Articles</h2>
 
-    <ul>
-        <li>
-            <a href="https://medium.com/@gaandlaneeraja/dfs-on-trees-three-patterns-i-keep-seeing-in-coding-interviews-48a310ee93ab">
-                DFS on Trees: Three Patterns I Keep Seeing in Coding Interviews
-            </a>
-        </li>
+    <div class="articles-grid">
 
-        <li>
-            <a href="https://medium.com/dev-genius/understanding-prefix-sum-pattern-through-progressive-problems-bfa38822d141">
-                Understanding Prefix Sum Through Progressive Problems
-            </a>
-        </li>
-    </ul>
+        <div class="article-card">
+            <div class="article-content">
+                <h3>Understanding @Stable in Jetpack compose</h3>
+                <p>I misunderstood @Stable in compose. Here's my breakdown of the annotation and its applications.</p>
+                <a href="https://medium.com/dev-genius/understanding-stable-in-jetpack-compose-the-concept-that-finally-clicked-for-me-3ede7f44f111">Read Article →</a>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <div class="article-content">
+                <h3>Jetpack Compose Interview guide for Experienced Android developers</h3>
+                <p>This one is not just a Compose Q&A but a powerful explanation of the jetpack fundamentals.</p>
+                <a href="https://medium.com/dev-genius/jetpack-compose-interview-guide-for-experienced-android-developers-3a957dcd3795">Read Article →</a>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <div class="article-content">
+                <h3>Sealed Classes vs Enum classes</h3>
+                <p>A deep dive on sealed classes and enum classes. Differences and usecases.</p>
+                <a href="https://medium.com/dev-genius/sealed-classes-vs-enum-classes-274a0b19cde0">Read Article →</a>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <div class="article-content">
+                <h3>Whatsapp System design</h3>
+                <p>I tried designing whatsapp from scratch. Here's what I learned and what most people miss</p>
+                <a href="https://medium.com/dev-genius/designing-whatsapp-a-system-design-guide-for-real-time-chat-applications-eac55eae4e62">Read Article →</a>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <div class="article-content">
+                <h3>DFS on Trees</h3>
+                <p>I noticed a few patterns in DFS. They have variations subtly hidden in them. I explained those patterns in this blog.</p>
+                <a href="https://medium.com/dev-genius/dfs-on-trees-three-patterns-i-keep-seeing-in-coding-interviews-48a310ee93ab">Read Article →</a>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <img src="thumb6.jpg" alt="">
+            <div class="article-content">
+                <h3>Graphs: Components, Distances and Paths</h3>
+                <p>Graph problems don't necessarily scream graph data structure. They are mostly in the form of a grid matrix. Here are some problems that demonstrate different thinking.</p>
+                <a href="https://medium.com/dev-genius/graph-thinking-patterns-components-distances-and-paths-95e39be61941">Read Article →</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<footer>
+    © 2026 Neeraja Gandla
+</footer>
 
 </body>
 </html>
