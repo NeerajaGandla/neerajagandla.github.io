@@ -1,5 +1,10 @@
 [
     {
+        "title": "Jetpack Compose Runtime \u2014 Part 5: Snapshots \u2014 The Invisible State System",
+        "link": "https://gaandlaneeraja.medium.com/jetpack-compose-runtime-part-5-snapshots-the-invisible-state-system-ecbad83384e6?source=rss-db8656eb692f------2",
+        "summary": "<figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/1024/1*f3dC3Bq_SzOSZGqWILndwg.png\" /></figure><strong>Snapshots.</strong>That word probably doesn\u2019t mean much"
+    },
+    {
         "title": "Thinking Like the Compose Runtime \u2014 Part 4: When Compose Decides to Do Nothing",
         "link": "https://blog.devgenius.io/thinking-like-the-compose-runtime-part-4-when-compose-decides-to-do-nothing-05ba1ef0e681?source=rss-db8656eb692f------2",
         "summary": "<figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/1024/1*uAmK00O1Zr0beFzQnQuOTA.png\" /></figure>In Part 3, we discovered how the runtime never loses its\u00a0place."
@@ -23,10 +28,5 @@
         "title": "Dynamic Programming \u2014 Part III: Beyond Two Choices (Coin Change)",
         "link": "https://blog.devgenius.io/dynamic-programming-part-iii-beyond-two-choices-coin-change-15efa01759b8?source=rss-db8656eb692f------2",
         "summary": "<figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/768/1*ZuDFNAALLQSJ4auEeJFcyg.png\" /></figure><blockquote>\u201cThe hardest part of Dynamic Programming isn\u2019t writing the rec"
-    },
-    {
-        "title": "Dynamic Programming \u2014 Part II: Learning to Think in Dynamic Programming (House Robber & Min Cost\u2026",
-        "link": "https://blog.devgenius.io/dynamic-programming-part-ii-learning-to-think-in-dynamic-programming-house-robber-min-cost-7b034f0a0b01?source=rss-db8656eb692f------2",
-        "summary": "<h3>Dynamic Programming\u200a\u2014\u200aPart II: Learning to Think in Dynamic Programming (House Robber &amp; Min Cost Climbing\u00a0Stairs)</h3><figure><img alt=\"\" src=\"https://cdn-images-1.medium.c"
     }
 ]
