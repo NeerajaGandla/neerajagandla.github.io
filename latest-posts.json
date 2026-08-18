@@ -1,5 +1,10 @@
 [
     {
+        "title": "Jetpack Compose Runtime \u2014 Part 6: The Composer \u2014 The Engine Behind Recomposition",
+        "link": "https://gaandlaneeraja.medium.com/jetpack-compose-runtime-part-6-the-composer-the-engine-behind-recomposition-7930ec04aecc?source=rss-db8656eb692f------2",
+        "summary": "<figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/1024/1*oywDo8-KPSevc6I1IWdGsA.png\" /></figure>In Part 5, we saw how <strong>Snapshots</strong> help Compose understa"
+    },
+    {
         "title": "Jetpack Compose Runtime \u2014 Part 5: Snapshots \u2014 The Invisible State System",
         "link": "https://gaandlaneeraja.medium.com/jetpack-compose-runtime-part-5-snapshots-the-invisible-state-system-ecbad83384e6?source=rss-db8656eb692f------2",
         "summary": "<figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/1024/1*f3dC3Bq_SzOSZGqWILndwg.png\" /></figure><strong>Snapshots.</strong>That word probably doesn\u2019t mean much"
@@ -23,10 +28,5 @@
         "title": "Why Jetpack Compose?",
         "link": "https://blog.devgenius.io/why-jetpack-compose-6563889e69b1?source=rss-db8656eb692f------2",
         "summary": "<figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/1024/1*17Jsq7GQfeH0b8Yr9TXXUA.png\" /></figure><h3>An invitation to Google\u2019s design\u00a0meeting</h3><blockquote>\u201cI walked in"
-    },
-    {
-        "title": "Dynamic Programming \u2014 Part III: Beyond Two Choices (Coin Change)",
-        "link": "https://blog.devgenius.io/dynamic-programming-part-iii-beyond-two-choices-coin-change-15efa01759b8?source=rss-db8656eb692f------2",
-        "summary": "<figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/768/1*ZuDFNAALLQSJ4auEeJFcyg.png\" /></figure><blockquote>\u201cThe hardest part of Dynamic Programming isn\u2019t writing the rec"
     }
 ]
