@@ -19,7 +19,7 @@
         font-family: 'Inter', sans-serif;
         background: #0f172a;
         color: #f8fafc;
-        line-height: 1.7;
+        line-height: 1.6;
     }
 
     .container {
@@ -28,172 +28,237 @@
         margin: auto;
     }
 
-    .hero {
-        min-height: 90vh;
+    .profile-dashboard {
+        min-height: 100vh;
         display: flex;
         align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 60px 20px;
+        padding: 42px 0;
         background:
             radial-gradient(circle at top right, #2563eb 0%, transparent 35%),
             radial-gradient(circle at bottom left, #7c3aed 0%, transparent 35%),
             #0f172a;
     }
 
-    .hero-content img {
-        width: 170px;
-        height: 170px;
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 48px;
+        align-items: center;
+    }
+
+    .profile-panel {
+        text-align: center;
+        padding: 28px 20px;
+        background: rgba(15, 23, 42, 0.45);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 22px;
+    }
+
+    .profile-image {
+        width: 145px;
+        height: 145px;
         border-radius: 50%;
         object-fit: cover;
         border: 4px solid rgba(255,255,255,0.15);
-        margin-bottom: 24px;
+        margin-bottom: 18px;
     }
 
     h1 {
-        font-size: 3rem;
-        margin-bottom: 10px;
+        font-size: 2rem;
+        margin-bottom: 8px;
     }
 
     .headline {
-        font-size: 1.25rem;
+        font-size: 0.98rem;
         color: #cbd5e1;
-        margin-bottom: 24px;
-    }
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-    margin-top: 30px;
-}
-
-.social-links a {
-    transition: transform 0.2s ease;
-}
-
-.social-links a:hover {
-    transform: scale(1.1);
-}
-
-.social-links img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-.resume-btn {
-    display: inline-block;
-    margin: 24px 0;
-    padding: 12px 30px;
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 999px;
-    transition: all 0.25s ease;
-    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
-}
-
-.resume-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.45);
-}
-
-.resume-btn:active {
-    transform: translateY(-1px);
-}
-
-.resume-btn:focus {
-    outline: 2px solid #60a5fa;
-    outline-offset: 3px;
-}
-    section {
-        padding: 80px 0;
     }
 
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 24px;
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        margin: 20px 0;
     }
 
-    .about {
+    .social-links a {
+        transition: transform 0.2s ease;
+    }
+
+    .social-links a:hover {
+        transform: scale(1.08);
+    }
+
+    .social-links img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+    }
+
+    .profile-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    .content-panel {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .compact-section {
+        background: rgba(30, 41, 59, 0.72);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 18px;
+        padding: 24px;
+    }
+
+    .compact-section h2 {
+        font-size: 1.35rem;
+        margin-bottom: 10px;
+    }
+
+    .compact-section p,
+    .skills-list {
+        color: #d1d5db;
+        font-size: 0.94rem;
+    }
+
+    .about,
+    .mentoring {
+        min-height: 205px;
+    }
+
+    .mentoring {
+        background: rgba(37, 99, 235, 0.12);
+    }
+
+    .mentoring .cta-btn {
+        margin-top: 16px;
+    }
+
+    .work-with-me {
+        min-height: 150px;
+    }
+
+    .cta-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        transition: all 0.25s ease;
+        text-align: center;
+    }
+
+    .cta-btn.primary {
+        background: linear-gradient(135deg, #2563eb, #7c3aed);
+        color: #ffffff;
+        box-shadow: 0 6px 18px rgba(37, 99, 235, 0.30);
+    }
+
+    .cta-btn.secondary {
+        border: 1px solid rgba(255,255,255,0.18);
+        color: #e2e8f0;
+        background: rgba(255,255,255,0.04);
+    }
+
+    .cta-btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .articles-section {
+        padding: 55px 0;
         background: #111827;
     }
 
-    .about p {
-        max-width: 850px;
-        color: #d1d5db;
-        font-size: 1.05rem;
+    .articles-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
     }
-.articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    align-items: stretch;
-}
 
-.article-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
+    .articles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        align-items: stretch;
+    }
+
     .article-card {
-    display: block;
-    background: #1e293b;
-    border-radius: 18px;
-    padding: 20px;
-    text-decoration: none;   /* Remove underline */
-    color: inherit;          /* Inherit normal text color */
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.article-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-}
-
-    .article-card img {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
+        display: block;
+        background: #1e293b;
+        border-radius: 18px;
+        padding: 16px;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
-    .article-content {
-        padding: 20px;
+    .article-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     }
 
     .article-card h3 {
-    color: #ffffff;
-    margin-bottom: 12px;
-    font-size: 1.15rem;
-}
+        color: #ffffff;
+        margin-bottom: 9px;
+        font-size: 1.08rem;
+    }
 
-.article-card p {
-    color: #cbd5e1;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-    .article-content a {
-        text-decoration: none;
-        color: #60a5fa;
-        font-weight: 600;
+    .article-card p {
+        color: #cbd5e1;
+        font-size: 0.9rem;
+        line-height: 1.55;
     }
 
     footer {
         text-align: center;
-        padding: 40px 20px;
+        padding: 30px 20px;
         color: #94a3b8;
         border-top: 1px solid rgba(255,255,255,0.08);
+        background: #0f172a;
     }
 
-    @media (max-width: 768px) {
-        h1 {
-            font-size: 2.3rem;
+    @media (max-width: 850px) {
+        .profile-dashboard {
+            min-height: auto;
+            padding: 30px 0;
         }
 
-        .headline {
-            font-size: 1rem;
+        .dashboard-grid {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .profile-panel {
+            max-width: 520px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .content-panel {
+            grid-template-columns: 1fr;
+        }
+
+        .about,
+        .mentoring {
+            min-height: auto;
+        }
+    }
+
+    @media (max-width: 500px) {
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        .content-panel {
+            gap: 14px;
+        }
+
+        .compact-section {
+            padding: 20px;
         }
     }
 </style>
@@ -202,73 +267,102 @@
 
 <body>
 
-<section class="hero">
-    <div class="hero-content">
+<section class="profile-dashboard">
+    <div class="container dashboard-grid">
 
-    <img src="profile.jpg" alt="Neeraja Gandla">
-    <h1>Neeraja Gandla</h1>
-    <div class="headline">
-        Android Engineer • Problem Solver • Technical Writer
+        <aside class="profile-panel">
+            <img src="profile.jpg" alt="Neeraja Gandla" class="profile-image">
+
+            <h1>Neeraja Gandla</h1>
+
+            <div class="headline">
+                Android Engineer • Problem Solver • Technical Writer
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/NeerajaGandla" target="_blank" rel="noopener noreferrer">
+                    <img src="github.jpg" alt="GitHub">
+                </a>
+                <a href="https://medium.com/@gaandlaneeraja" target="_blank" rel="noopener noreferrer">
+                    <img src="medium.jpg" alt="Medium">
+                </a>
+                <a href="https://www.linkedin.com/in/neeraja-gandla-android-developer/" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin.jpg" alt="LinkedIn">
+                </a>
+            </div>
+
+            <div class="profile-actions">
+                <a href="Neeraja_Gandla_Senior_Android.pdf"
+                   class="cta-btn secondary"
+                   target="_blank">
+                    Resume
+                </a>
+                <a href="https://calendar.app.google/6o9YnBmBAgWxoCuo8"
+                   class="cta-btn primary"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Book a Session
+                </a>
+            </div>
+        </aside>
+
+        <main class="content-panel">
+
+            <section class="compact-section about">
+                <h2>About Me</h2>
+                <p>
+                    I'm an Android Engineer with nearly a decade of experience building
+                    scalable Android applications using Kotlin, Jetpack Compose, MVVM,
+                    Coroutines, Retrofit, Room, and modern Android architecture. Beyond
+                    building apps, I enjoy breaking down complex engineering concepts
+                    into practical articles that help developers deepen their understanding
+                    of Android and software engineering.
+                </p>
+            </section>
+
+            <section class="compact-section mentoring">
+                <h2>Mentoring</h2>
+                <p>
+                    I mentor developers on Android, DSA, interview preparation, and
+                    technical growth, with practical guidance based on real engineering
+                    experience.
+                </p>
+                <a href="https://calendar.app.google/6o9YnBmBAgWxoCuo8"
+                   class="cta-btn primary"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Book a Session
+                </a>
+            </section>
+
+            <section class="compact-section">
+                <h2>Skills</h2>
+                <p class="skills-list">
+                    Kotlin • Android SDK • Jetpack Compose • MVVM • Coroutines •
+                    Flow • Retrofit • Room • Hilt • Clean Architecture •
+                    Firebase • REST APIs • Git
+                </p>
+            </section>
+
+            <section class="compact-section work-with-me">
+                <h2>Work With Me</h2>
+                <p>
+                    I'm open to full-time opportunities, technical discussions,
+                    and collaborations.
+                </p>
+            </section>
+
+        </main>
     </div>
-
-    <div class="social-links">
-    <a href="https://github.com/NeerajaGandla" target="_blank">
-        <img src="github.jpg" alt="GitHub">
-    </a>
-
-    <a href="https://medium.com/@gaandlaneeraja" target="_blank">
-        <img src="medium.jpg" alt="Medium">
-    </a>
-
-    <a href="https://www.linkedin.com/in/neeraja-gandla-android-developer/" target="_blank">
-        <img src="linkedin.jpg" alt="LinkedIn">
-    </a>
-    </div>
-</div>
-
 </section>
 
-<section class="about">
+<section class="articles-section">
     <div class="container">
-    <h2>About Me</h2>
-
-    <p>
-        I'm an Android Engineer with nearly a decade of experience building scalable Android applications using Kotlin, Jetpack Compose, MVVM, Coroutines, Retrofit, Room, and modern Android architecture. Beyond building apps, I enjoy breaking down complex engineering concepts into practical articles that help developers deepen their understanding of Android and software engineering.
-    </p>
-</div>
-</section>
-<section>
-    <div class="container">
-        <h2>Skills</h2>
-
-        <p>
-            • Kotlin • Android SDK • Jetpack Compose • MVVM • Coroutines •
-            Flow • Retrofit • Room • Hilt • Clean Architecture •
-            Firebase • REST APIs • Git
-        </p>
-    </div>
-</section>
-<section>
-    <div class="container">
-    <h2>Featured Articles</h2>
+        <h2>Featured Articles</h2>
         <div class="articles-grid" id="articles-grid"></div>
-</div>
-</section>
-<section class="hire-me">
-    <div class="container">
-        <h2>Work With Me</h2>
-
-        <p>
-            I'm an Android Engineer with nearly 10 years of experience building
-            high-quality Android applications. I'm open to full-time opportunities,
-            technical discussions, and collaborations.
-        </p>
-
-        <a href="Neeraja_Gandla_Senior_Android.pdf"
-        class="resume-btn"
-        target="_blank">Resume</a>
     </div>
 </section>
+
 <footer>
     © 2026 Neeraja Gandla
 </footer>
